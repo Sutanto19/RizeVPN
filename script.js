@@ -4,8 +4,16 @@ var homeLink = document.getElementById('homeLink');
     event.preventDefault(); // Menghentikan perilaku bawaan dari tautan
     location.reload(); // Me-reload halaman
   });
+  
 
-
+  var contactLink = document.getElementById('contactLink');
+  var contactIcons = document.getElementById('contactIcons');
+  
+  contactLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    contactIcons.classList.toggle('show');
+  });
+  
 //GET NOW BUTTON
 document.getElementById('getNowButton').addEventListener('click', function() {
     // Show the subscription popup
@@ -102,17 +110,6 @@ document.getElementById("backButton").addEventListener("click", function(event) 
   showVPNForm();
 });
 
-
-
-
-
-
 //CONTACT
-var contactLink = document.getElementById('contactLink');
-var contactIcons = document.getElementById('contactIcons');
 
-contactLink.addEventListener('click', function(e) {
-  e.preventDefault();
-  contactIcons.classList.toggle('show');
-});
 
