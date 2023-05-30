@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<Title>RizeVPN</Title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<!--header start-->
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="shield.png" alt="">
+    </a>
+    <div class="content">
+        <h3>RizeVPN</h3>
+        
+    </div>
+    <nav class="navbar">
+        <a href="#" id="homeLink">home</a>
+        <a href="#" id="productsLink">products</a>
+        <a href="#" id="contactLink">contacts</a>
+      </nav>
+      
+      <div id="contactIcons">
+        <a href="https://instagram.com/sutantoo19?igshid=NGExMmI2YTkyZg=="><img src="instagram.png" alt="Instagram"></a>
+        <a href="http://wa.me/6281312086533"><img src="whatsapp.png" alt="Whatsapp"style="width: 40px; height: 40px;"></a>
+      </div>
+      
+    </header>
+
+    <!--header end-->
+
+    <!--home start-->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="slides">
+                <h2>Secure and Private VPN Service</h2>
+                <button id="getNowButton" class="get-now-button">Get Now</button>
+
+            </div>
+        </div>
+    </section>
+    <!--home end-->
+
+    <!--Pop Up Subscription-->
+  <div class="overlay"></div>
+  
+  <div class="popup">
+    <h2>Get Secure with Our VPN!</h2>
+    <p>Protect your online privacy and browse securely with our VPN service.</p>
+    
+    <form id="vpnForm">
+      <h3>Choose Subscription:</h3>
+      
+      <div class="subscription-options">
+        <label>
+          <input type="radio" name="subscription" value="Lifetime">
+          Lifetime ($20/mo)
+        </label>
+        
+        <label>
+          <input type="radio" name="subscription" value="12 Months">
+          12 Months ($25/mo)
+        </label>
+        
+        <label>
+          <input type="radio" name="subscription" value="6 Months">
+          6 Months ($30/mo)
+        </label>
+      </div>
+      
+      <button id="getVPN" class="get-vpn">Get VPN</button>
+    </form>
+    <form id="registform" style="display: none;">
+      <h3>Registration Form</h3>
+  
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment">
+          <option value="local-bank">Local Bank</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="paypal">PayPal</option>
+      </select>
+  
+      <button type="submit">Submit</button>
+  </form>
+  
+    
+    
+    <a class="close" href="#">Close</a>
+  </div>
+
+<!--Pop Up Subscription End-->
+
+<!--Form Start-->
+
+
+<!--Form End-->
+<script src="script.js"></script>
+</body>
